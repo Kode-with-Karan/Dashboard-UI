@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+    href="/css/app-wa-9ca8c9f9421603170b4a92c28ed2181d.css?vsn=d">
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/fontawesome.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/fontawesome.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/whiteboard-semibold.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/whiteboard-semibold.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-fill-semibold.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-fill-semibold.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-duo-semibold.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-duo-semibold.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-semibold.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-semibold.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/thumbprint-light.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/thumbprint-light.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/slab-press-regular.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/slab-press-regular.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/slab-regular.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/slab-regular.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-thin.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-thin.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-solid.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-solid.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-regular.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-regular.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-light.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-light.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-thin.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-thin.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-solid.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-solid.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-regular.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-regular.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-light.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-light.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/notdog-duo-solid.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/notdog-duo-solid.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/notdog-solid.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/notdog-solid.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-fill-regular.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-fill-regular.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-duo-regular.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-duo-regular.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-regular.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-regular.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/etch-solid.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/etch-solid.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-thin.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-thin.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-regular.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-regular.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-light.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-light.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/thin.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/thin.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/solid.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/solid.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/regular.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/regular.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/light.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/light.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/brands.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/brands.css">
+  </noscript>
+
+  <link defer media="print" onload="this.media='all'" rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/chisel-regular.css">
+  <noscript>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/chisel-regular.css">
+  </noscript>
+  <title>HR-Management-Dashborad</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Crextio</div>
+    <input type="checkbox" name="" id="mobile_links_sutter_toggle">
+    <div class="mobile_links">
+      <div class="mobile_navbar">
+        <ul>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="">People</a></li>
+            <li><a href="">Hiring</a></li>
+            <li><a href="">Devices</a></li>
+            <li><a href="">Apps</a></li>
+            <li><a href="">Salary</a></li>
+            <li><a href="">Calendar</a></li>
+            <li><a href="">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="mobile_setting">
+        <ul>
+          <li><a href=""> <i class="fa-light fa-gear"></i> Setting</a></li>
+        </ul>
+      </div>
+      <label for="mobile_links_sutter_toggle"><div class="mobile_links_sutter"></div></label>
+    </div>
+    
+    <nav>
+      <div class="links">
+        <div class="navbar">
+          <ul>
+            <li><a class="active_link" >Dashboard</a></li>
+            <li><a >People</a></li>
+            <li><a >Hiring</a></li>
+            <li><a >Devices</a></li>
+            <li><a >Apps</a></li>
+            <li><a >Salary</a></li>
+            <li><a >Calendar</a></li>
+            <li><a >Reviews</a></li>
+          </ul>
+        </div>
+        <div class="setting">
+          <ul>
+            <li><a href=""> <i class="fa-light fa-gear"></i> Setting</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav-icons">
+        <div class="noti">
+          <ul>
+            <li><a href=""><i class="fa-light fa-bell"></i></a></li>
+          </ul>
+        </div>
+        <div class="profile">
+          <ul>
+            <li><a href=""><i class="fa-light fa-user"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <section class="hero">
+    <div class="welcome">Welcome in, Nixtio</div>
+    <div class="data">
+      <div class="work_progress">
+        <div class="individual_work_progress">
+          <div class="progress_name">Interviews </div>
+          <div class="progress_persentage">15%</div>
+        </div>
+        <div class="individual_work_progress">
+          <div class="progress_name">Hired</div>
+          <div class="progress_persentage">15%</div>
+        </div>
+        <div class="individual_work_progress">
+          <div class="progress_name">Project time</div>
+          <div class="progress_persentage">60%
+            <div class="progress_persentage_bg">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+        </div>
+        <div class="individual_work_progress">
+          <div class="progress_name">Output</div>
+          <div class="progress_persentage">10%</div>
+        </div>
+
+      </div>
+      <div class="counts">
+        <div class="counts_data">
+          <div class="counts_icon_num">
+            <div class="count_icon"><i class="fa-jelly fa-thin fa-users"></i></div>
+            <div class="count_num">78</div>
+          </div>
+          <div class="count_name">Employe</div>
+        </div>
+        <div class="counts_data">
+          <div class="counts_icon_num">
+            <div class="count_icon"><i class="fa-light fa-user-plus"></i></div>
+            <div class="count_num">56</div>
+          </div>
+          <div class="count_name">Hirings</div>
+        </div>
+        <div class="counts_data">
+          <div class="counts_icon_num">
+            <div class="count_icon"><i class="fa-light fa-laptop"></i></div>
+            <div class="count_num">203</div>
+          </div>
+          <div class="count_name">Projects</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dashboard_content">
+    <div class="profile_section">
+      <div>
+        <div class="profile_data">
+          <div class="profile_name">Lora Piterson</div>
+          <div class="profile_designation">UX/UI Designer</div>
+        </div>
+        <div class="profile_pay">$1,200</div>
+      </div>
+    </div>
+    <div class="progress_section">
+      <div class="progress_header">
+        <div class="progress_title">Progress</div>
+        <div class="progress_link"><i class="fa-sharp fa-light fa-arrow-down"></i></div>
+      </div>
+      <div class="progress_data">
+        <div class="progress_hours">6.1h</div>
+        <div class="progress_info">Work Time <br> this week</div>
+      </div>
+      <div class="progress_chart">
+        <div class="progress_chart_days">
+
+          <div class="progress_chart_day">
+            <p>S</p>
+            <br>
+            <span class="progress_chart_dot"></span>
+            <br>
+            <span class="progress_chart_bar"></span>
+          </div>
+          <div class="progress_chart_day">
+            <p>M</p>
+            <br>
+            <span class="progress_chart_dot"></span>
+            <br>
+            <span class="progress_chart_bar"></span>
+          </div>
+          <div class="progress_chart_day">
+            <p>T</p>
+            <br>
+            <span class="progress_chart_dot"></span>
+            <br>
+            <span class="progress_chart_bar"></span>
+          </div>
+          <div class="progress_chart_day">
+            <p>W</p>
+            <br>
+            <span class="progress_chart_dot"></span>
+            <br>
+            <span class="progress_chart_bar"></span>
+          </div>
+          <div class="progress_chart_day">
+            <p>T</p>
+            <br>
+            <span class="progress_chart_dot"></span>
+            <br>
+            <span class="progress_chart_bar"></span>
+          </div>
+          <div class="progress_chart_day">
+            <p>F</p>
+            <br>
+            <span class="progress_chart_dot"></span>
+            <br>
+            <span class="progress_chart_bar"></span>
+            <span>5h 23m</span>
+          </div>
+          <div class="progress_chart_day">
+            <p>S</p>
+            <br>
+            <span class="progress_chart_dot"></span>
+            <br>
+            <span class="progress_chart_bar"></span>
+          </div>
+          <span></span>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="timmer_section">
+      <div class="timmer_header">
+        <div class="timmer_title">Time tracker</div>
+        <div class="timmer_link"><i class="fa-sharp fa-light fa-arrow-down"></i></div>
+      </div>
+
+      <div class="base-timer">
+        <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <g class="base-timer__circle">
+            <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
+          </g>
+        </svg>
+        <span id="base-timer-label" class="base-timer__label">
+          <p>02:35</p>
+          <p>Work Time</p>
+        </span>
+      </div>
+      <div class="timmer_footer">
+        <div class="timmer_play_pause">
+          <div class="timmer_play"><i class="fa-light fa-play"></i></div>
+          <div class="timmer_pause"><i class="fa-whiteboard fa-semibold fa-pause"></i></div>
+        </div>
+        <div class="timmer_clock"><i class="fa-utility fa-semibold fa-alarm-clock"></i></div>
+      </div>
+    </div>
+    <div class="benefits_section">
+      <div class="benefit_items">
+        <div class="banefit_title">Pension contributions<div class="benefit_dropdown_icon"><i
+              class="fa-duotone fa-light fa-angle-down"></i></div>
+        </div>
+
+        <div class="benefit_dropdown"></div>
+      </div>
+      <div class="benefit_items">
+        <div class="banefit_title">Devices<div class="benefit_dropdown_icon"><i
+              class="fa-duotone fa-light fa-angle-down"></i></div>
+        </div>
+
+        <div class="benefit_dropdown">
+          <div class="benefit_dropdown_content">
+            <img src="./assests/mac2.png" alt="">
+            <p>MacBook Air
+              <span>Version MI</span>
+            </p>
+          </div>
+
+          <span><i class="fa-duotone fa-light fa-ellipsis-vertical"></i></span>
+        </div>
+
+      </div>
+      <div class="benefit_items">
+        <div class="banefit_title">Compensation Summary<div class="benefit_dropdown_icon"><i
+              class="fa-duotone fa-light fa-angle-down"></i></div>
+        </div>
+
+        <div class="benefit_dropdown"></div>
+      </div>
+      <div class="benefit_items">
+        <div class="banefit_title">Employee Benefits<div class="benefit_dropdown_icon"><i
+              class="fa-duotone fa-light fa-angle-down"></i></div>
+        </div>
+
+        <div class="benefit_dropdown"></div>
+      </div>
+    </div>
+    <div class="calender_section">
+      <div class="calender_header">
+        <span>August</span>
+        <span>September 2024</span>
+        <span>October</span>
+      </div>
+      <div class="calender_body">
+        <div class="calender_month">
+          <span>Mon <br> &nbsp;22</span>
+          <span>Tue <br> &nbsp;23</span>
+          <span>Wed <br> &nbsp;24</span>
+          <span>Thu <br> &nbsp;25</span>
+          <span>Fri <br> &nbsp;26</span>
+          <span>Sat <br> &nbsp;27</span>
+        </div>
+        <div class="calender_hours">
+          <div class="calender_hour">
+            <span>8:00 am</span>
+            <span>9:00 am</span>
+            <span>10:00 am</span>
+            <span>11:00 am</span>
+          </div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="comments">
+          <div class="comment_info">
+            <h4>Weekly Team Sync</h4>
+            <p>Discuss progress on projects</p>
+          </div>
+          <div class="avatars">
+            <img src="./assests/avatar1 (Custom).png" alt="">
+            <img src="./assests/avatar2 (Custom).png" alt="">
+            <img src="./assests/avatar3 (Custom).png" alt="">
+          </div>
+        </div>
+        <div class="second_comments">
+          <div class="comment_info">
+            <h4>Onboarding Session</h4>
+            <p>Introduction for new hires</p>
+          </div>
+          <div class="avatars">
+            <img src="./assests/avatar1 (Custom).png" alt="">
+            <img src="./assests/avatar2 (Custom).png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="onboarding_secion">
+      <div class="progress_header">
+        <div class="progress_title">Onboarding</div>
+        <div style="font-size: 50px; font-weight: 200;">18%</div>
+      </div>
+      <div class="onboarding_percentage">
+        <div class="task">
+          <p>30%</p>
+          <span style="padding: 13px;">Task</span>
+        </div>
+        <div class="task">
+          <p>25%</p>
+          <span></span>
+        </div>
+        <div class="task">
+          <p>0%</p>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="onboarding_tasks">
+        <span></span>
+        <span></span>
+        <div class="onboarding_data">
+          <h5>Onboarding Task</h5>
+          <p>2/8</p>
+        </div>
+        <div class="onboarding_todos">
+          <div class="onboarding_todo">
+            <div class="onboarding_data">
+              <div class="onboarding_todo_icon"><i class="fa-light fa-tv"></i></div>
+              <div class="onboarding_todo_info">
+                <h5>Interview</h5>
+                <p>sep 13, 08:30</p>
+              </div>
+            </div>
+            <div class="onboarding_todo_check"><i class="fa-regular fa-check"></i></div>
+          </div>
+          <div class="onboarding_todo">
+            <div class="onboarding_data">
+              <div class="onboarding_todo_icon"><i class="fa-light fa-bolt"></i></div>
+              <div class="onboarding_todo_info">
+                <h5>Team Meeting</h5>
+                <p>sep 13, 10:30</p>
+              </div>
+            </div>
+            <div class="onboarding_todo_check"><i class="fa-regular fa-check"></i></div>
+          </div>
+          <div class="onboarding_todo">
+            <div class="onboarding_data">
+              <div class="onboarding_todo_icon"><i class="fa-light fa-comment-dots"></i></div>
+              <div class="onboarding_todo_info">
+                <h5>Project Update</h5>
+                <p>sep 13, 13:00</p>
+              </div>
+            </div>
+            <div class="onboarding_todo_check"></div>
+          </div>
+          <div class="onboarding_todo">
+            <div class="onboarding_data">
+              <div class="onboarding_todo_icon"><i class="fa-light fa-ruler"></i></div>
+              <div class="onboarding_todo_info">
+                <h5>Discuss Q3 Goals</h5>
+                <p>sep 13, 14:45</p>
+              </div>
+            </div>
+            <div class="onboarding_todo_check"></div>
+          </div>
+          <div class="onboarding_todo">
+            <div class="onboarding_data">
+              <div class="onboarding_todo_icon"><i class="fa-light fa-link"></i></div>
+              <div class="onboarding_todo_info">
+                <h5>HR Policy Review</h5>
+                <p>sep 13, 16:30</p>
+              </div>
+            </div>
+            <div class="onboarding_todo_check"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
