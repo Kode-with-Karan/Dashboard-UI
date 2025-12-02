@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+html, body {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
 }
@@ -12,6 +16,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
     /* height: 100vh; */
 }
 
@@ -289,6 +294,7 @@ nav>.nav-icons {
     grid-template-areas: 'profile_section progress_section timmer_section onboarding_secion'
         'benefits_section calender_section calender_section onboarding_secion';
     gap: 4px;
+    height: 100%;
 }
 
 .profile_section {
@@ -297,7 +303,8 @@ nav>.nav-icons {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 50vh;
+        /* height: 50vh; */
+
     border-radius: 50px;
     grid-area: profile_section;
     color: white;
@@ -341,7 +348,8 @@ nav>.nav-icons {
 .progress_section {
     background-color: #ffffffad;
     width: 100%;
-    height: 50vh;
+        /* height: 50vh; */
+
     border-radius: 50px;
     grid-area: progress_section;
     position: relative;
@@ -479,15 +487,6 @@ nav>.nav-icons {
 .timmer_section {
     background-color: #ffffffad;
     width: 100%;
-    height: 50vh;
-    border-radius: 50px;
-    grid-area: timmer_section;
-}
-
-.timmer_section {
-    background-color: #ffffffad;
-    width: 100%;
-    height: 50vh;
     border-radius: 50px;
     grid-area: timmer_section;
 }
@@ -629,7 +628,8 @@ nav>.nav-icons {
 .benefits_section {
     background-color: #ffffffad;
     width: 100%;
-    height: 50vh;
+        /* height: 50vh; */
+
     border-radius: 50px;
     grid-area: benefits_section;
     padding: 20px 30px;
@@ -682,7 +682,8 @@ nav>.nav-icons {
 .calender_section {
     background-color: #ffffffad;
     width: 100%;
-    height: 50vh;
+        /* height: 50vh; */
+
     border-radius: 50px;
     grid-area: calender_section;
 }
@@ -707,7 +708,9 @@ nav>.nav-icons {
 }
 
 .calender_body {
-    height: 20vh;
+    position: relative;
+    height: auto;
+    min-height: 200px;
 }
 
 .calender_month {
@@ -740,47 +743,34 @@ nav>.nav-icons {
 
 .comments {
     display: flex;
-    position: relative;
+    position: absolute;
     background: black;
     color: white;
     border-radius: 20px;
     align-items: center;
-    width: fit-content;
-    position: relative;
-    bottom: 25vh;
-    left: 24vh;
+    max-width: 46%;
+    width: auto;
+    bottom: 10px;
+    left: 12%;
+    padding: 10px 14px;
 }
 
 .comment_info {
-    padding: 10px 126px 10px 10px;
+    padding: 10px 16px 10px 10px;
 }
 
 .comments>.avatars {
-    /* padding: 10px 20px; */
-    padding: 10px 20px;
-    position: absolute;
-    right: 0;
+    padding: 10px 12px;
+    position: relative;
 }
 
-.comments>.avatars>img:nth-child(1) {
-    z-index: 1;
-    position: relative;
-    left: 55px;
-    width: 24%;
-}
-
-.comments>.avatars>img:nth-child(2) {
-    z-index: 2;
-    position: relative;
-    left: 40px;
-    width: 24%;
-}
-
-.comments>.avatars>img:nth-child(3) {
-    z-index: 3;
-    position: relative;
-    width: 24%;
-    left: 26px;
+.comments>.avatars>img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -10px;
+    border: 2px solid white;
 }
 
 .calender_hours>span {
@@ -791,48 +781,42 @@ nav>.nav-icons {
 
 .second_comments {
     display: flex;
-    position: relative;
+    position: absolute;
     background: white;
     color: black;
     border-radius: 20px;
     align-items: center;
-    width: fit-content;
-    position: relative;
-    bottom: 20vh;
-    left: 46vh;
+    max-width: 40%;
+    width: auto;
+    bottom: 12px;
+    left: 60%;
     overflow: hidden;
+    padding: 10px 14px;
 }
 
 .second_comments>.comment_info {
-    padding: 10px 90px 10px 10px;
+    padding: 10px 12px 10px 10px;
 }
 
 .second_comments>.avatars {
-    /* padding: 10px 20px; */
-    padding: 10px 20px;
-    position: absolute;
-    right: 0;
+    padding: 10px 12px;
+    position: relative;
 }
 
-.second_comments>.avatars>img:nth-child(1) {
-    z-index: 1;
-    position: relative;
-    left: 55px;
-    width: 32%;
-}
-
-.second_comments>.avatars>img:nth-child(2) {
-    z-index: 2;
-    position: relative;
-    left: 40px;
-    width: 32%;
+.second_comments>.avatars>img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -10px;
+    border: 2px solid white;
 }
 
 
 .onboarding_secion {
     background-color: #ffffffad;
     width: 100%;
-    height: 100vh;
+    min-height: 420px;
     border-radius: 50px;
     grid-area: onboarding_secion;
 }
@@ -1022,7 +1006,7 @@ nav>.nav-icons {
     }
     .mobile_links{
         display: block ;
-        width: 100%;
+        width: 90%;
     }
 
     .data {
@@ -1041,20 +1025,29 @@ nav>.nav-icons {
             'calender_section calender_section';
     }
 
-    .comments>.avatars {
-        display: none;
+    /* Keep comment cards in the normal flow on smaller screens to avoid overlap */
+    .comments,
+    .second_comments {
+        position: static;
+        width: 100%;
+        max-width: none;
+        margin: 10px 0;
+        left: auto;
+        bottom: auto;
+        padding: 12px;
+        border-radius: 12px;
     }
 
+    .comments>.avatars,
     .second_comments>.avatars {
-        display: none;
+        display: flex;
+        position: relative;
+        margin-left: auto;
     }
 
-    .comments>.comment_info {
-        padding: 10px 10px 10px 10px;
-    }
-
+    .comments>.comment_info,
     .second_comments>.comment_info {
-        padding: 10px 10px 10px 10px;
+        padding: 10px;
     }
 
 }
@@ -1098,14 +1091,21 @@ nav>.nav-icons {
             'onboarding_secion';
     }
 
-    .comments {
-        width: 24px;
-        height: 24px;
+    /* On very small screens make comment cards full width and compact */
+    .comments,
+    .second_comments {
+        position: static;
+        width: 100%;
+        max-width: none;
+        margin: 8px 0;
+        padding: 10px;
+        border-radius: 10px;
     }
 
-    .second_comments {
-        width: 24px;
-        height: 24px;
-        left: 39vh;
+    .comments>.avatars>img,
+    .second_comments>.avatars>img {
+        width: 28px;
+        height: 28px;
+        margin-left: -8px;
     }
 }
